@@ -1,0 +1,123 @@
+.container_main {
+  @apply min-h-screen;
+  div {
+    .devLogoText {
+      @apply pt-[20%] sm:pt-[85%] text-center text-xl;
+    }
+    .logoText {
+      @apply text-center tracking-widest font-bold sm:text-3xl text-[42px];
+    }
+    h2 {
+      @apply text-center tracking-widest font-bold sm:text-3xl text-2xl pt-10;
+    }
+    h4 {
+      @apply text-center text-gray-900 font-extrabold;
+    }
+  }
+  /* background: url("../assets/yes/bg2.webp")  center / cover; */
+  background: url("../public/assets/bg2.jpg") center / cover;
+}
+
+.container_main_four {
+  @apply min-h-screen text-white;
+  .skills {
+    @apply grid pb-32 sm:grid-cols-1 grid-cols-2;
+    h2 {
+      @apply text-center text-2xl font-bold sm:pt-14 pt-14;
+    }
+    .skills_element {
+      @apply sm:pt-10 pt-20 grid sm:grid-cols-2 grid-cols-3 cursor-pointer text-xs;
+      li {
+        @apply m-5;
+      }
+    }
+    .one {
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      background: url("../public/assets/svg/1.svg") no-repeat center 1%;
+    }
+    .two {
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      background: url("../public/assets/svg/2.svg") no-repeat center 1%;
+    }
+    .three {
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      background: url("../public/assets/svg/3.svg") no-repeat center 1%;
+    }
+    .four {
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      background: url("../public/assets/svg/4.svg") no-repeat center 1%;
+    }
+    .five {
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      background: url("../public/assets/svg/5.svg") no-repeat center 1%;
+    }
+    .six {
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      background: url("../public/assets/svg/6.svg") no-repeat center 1%;
+    }
+    .seven {
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      background: url("../public/assets/svg/7.svg") no-repeat center 1%;
+    }
+    .eight {
+      @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      background: url("../public/assets/svg/8.svg") no-repeat center 1%;
+    }
+    .nine {
+      @apply text-center relative   sm:top-0 sm:left-1/2 pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
+      background: url("../public/assets/svg/9.svg") no-repeat center 0%;
+    }
+  }
+  .img {
+    background: url("../public/assets/yes/lamps-min.webp") 0% / cover;
+  }
+}
+
+.landing_main {
+  @apply min-h-screen bg-[#ffffff];
+  .landing_top {
+    @apply h-full;
+  }
+  .landing_use {
+    div {
+      @apply px-5 py-14 mx-auto;
+    }
+    .landing_use_top {
+      @apply flex flex-col text-center w-full;
+      h2 {
+        @apply text-3xl leading-relaxed tracking-widest font-medium  mb-1 p-4   rounded-sm;
+      }
+      h1 {
+        @apply sm:text-xl text-2xl  mb-4 pt-5 text-indigo-400  bg-[rgba(18,26,27,0.1)] shadow-sm rounded-sm;
+      }
+      p {
+        @apply lg:w-3/4 mx-auto leading-relaxed text-xl rounded-sm sm:text-sm inline;
+      }
+    }
+    .landing_use_bottom {
+      @apply flex flex-wrap;
+      div {
+        @apply lg:w-1/2 md:w-full px-8 py-4 sm:border-l-2 md:border-l-2 border-gray-800;
+        h2 {
+          @apply sm:text-sm  text-indigo-300 shadow-md  text-[16px]  mb-2;
+        }
+        p {
+          @apply sm:text-sm leading-relaxed  text-base mb-4;
+        }
+      }
+    }
+  }
+}
+
+.marketing_map {
+  @apply min-h-full sm:pt-32 bg-red-200 pt-[20rem];
+  background: no-repeat url("../public/assets/svg/m2.svg") 50% / contain;
+
+  .marketing_bot_content {
+    @apply flex justify-center pt-20;
+  }
+}
+.answerWrapper {
+  // @apply  h-screen ;
+  background: url("../public/assets/photo/mac.webp") no-repeat 99% 10% ;
+}
