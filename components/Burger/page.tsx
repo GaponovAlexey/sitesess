@@ -2,7 +2,7 @@
 import { usePathname, useRouter } from "next/navigation"
 import s from "../../styles/layout.module.scss"
 import ScrollPath from "../Utils/ScrollPath"
-import { Link } from "react-scroll"
+import { Link, Button } from "react-scroll"
 
 function Burger({ setIsOpen }: any) {
   const pathname = usePathname()
