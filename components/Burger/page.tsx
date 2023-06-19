@@ -1,3 +1,4 @@
+"use client"
 import s from "../../styles/layout.module.scss"
 import ScrollPath from "../Utils/ScrollPath"
 
