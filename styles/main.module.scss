@@ -32,43 +32,43 @@
     }
     .one {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../public/assets/svg/1.svg") no-repeat center 1%;
+      background: url("/assets/svg/1.svg") no-repeat center 1%;
     }
     .two {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../public/assets/svg/2.svg") no-repeat center 1%;
+      background: url("/assets/svg/2.svg") no-repeat center 1%;
     }
     .three {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../public/assets/svg/3.svg") no-repeat center 1%;
+      background: url("/assets/svg/3.svg") no-repeat center 1%;
     }
     .four {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../public/assets/svg/4.svg") no-repeat center 1%;
+      background: url("/assets/svg/4.svg") no-repeat center 1%;
     }
     .five {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../public/assets/svg/5.svg") no-repeat center 1%;
+      background: url("/assets/svg/5.svg") no-repeat center 1%;
     }
     .six {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../public/assets/svg/6.svg") no-repeat center 1%;
+      background: url("/assets/svg/6.svg") no-repeat center 1%;
     }
     .seven {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../public/assets/svg/7.svg") no-repeat center 1%;
+      background: url("/assets/svg/7.svg") no-repeat center 1%;
     }
     .eight {
       @apply text-center pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../public/assets/svg/8.svg") no-repeat center 1%;
+      background: url("/assets/svg/8.svg") no-repeat center 1%;
     }
     .nine {
       @apply text-center relative   sm:top-0 sm:left-1/2 pt-20 p-2 hover:animate-pulse hover:shadow-2xl;
-      background: url("../public/assets/svg/9.svg") no-repeat center 0%;
+      background: url("/assets/svg/9.svg") no-repeat center 0%;
     }
   }
   .img {
-    background: url("../public/assets/yes/lamps-min.webp") 0% / cover;
+    background: url("/assets/yes/lamps-min.webp") 0% / cover;
   }
 }
 
@@ -110,13 +110,12 @@
 
 .marketing_map {
   @apply min-h-full sm:pt-32 bg-red-200 pt-[20rem];
-  background: no-repeat url("../public/assets/svg/m2.svg") 50% / contain;
+  background: no-repeat url("/assets/svg/m2.svg") 50% / contain;
 
   .marketing_bot_content {
     @apply flex justify-center pt-20;
   }
 }
 .answerWrapper {
-  // @apply  h-screen ;
-  background: url("../public/assets/photo/mac.webp") no-repeat 99% 10%;
+  background: url("/assets/photo/mac.webp") no-repeat 99% 10%;
 }
