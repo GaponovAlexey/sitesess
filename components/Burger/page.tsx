@@ -1,21 +1,29 @@
 "use client"
-import { usePathname, useRouter } from "next/navigation"
 import s from "../../styles/layout.module.scss"
 import ScrollPath from "../Utils/ScrollPath"
-import { Link, Button } from "react-scroll"
+
+const path = [
+  { id: 1, rout: "home", name: "Home" },
+  { id: 2, rout: "landing", name: "Landing" },
+  { id: 3, rout: "strengths", name: "Our strengths" },
+  { id: 4, rout: "application", name: "Contact the manager" },
+]
 
 function Burger({ setIsOpen }: any) {
-  const pathname = usePathname()
-  const router = useRouter()
+  // const pathname = usePathname()
 
   return (
-    <div className={s.burger_main}>
+    <div onClick={() => setIsOpen(false)} className={s.burger_main}>
       <section className={s.burger_wrapper}>
-        <div onClick={() => setIsOpen(false)} className={s.burger_routs}>
-          <Link to="home" smooth={true} duration={1500}>
-            Home
-          </Link>
-        </div>
+        {path.map((path) => {
+          return (
+            <div key={path.id} >
+              <ScrollPath to={path.rout}>
+                <div className={s.burger_routs} onClick={() => setIsOpen(false)}>{path.name}</div>
+              </ScrollPath>
+            </div>
+          )
+        })}
       </section>
     </div>
   )

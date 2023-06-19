@@ -1,18 +1,15 @@
 .header_main {
   .burger {
-    @apply fixed z-20 top-5 right-5;
+    @apply fixed  z-20 top-5 right-5;
   }
 }
 
 .burger_main {
   @apply fixed -z-20 overflow-hidden bg-gray-900 bg-opacity-80 inset-0  ease-in-out;
   .burger_wrapper {
-    @apply w-screen cursor-pointer max-w-lg right-0 text-black absolute bg-white h-full shadow-xl duration-[4000ms] transform;
+    @apply w-screen pt-20 cursor-pointer max-w-[30rem] right-0 text-black absolute bg-white h-full shadow-xl duration-[4000ms] transform;
     .burger_routs {
-      @apply text-right pt-20 text-3xl  px-10  max-w-lg pb-10 flex flex-col;
-      A {
-        @apply pt-5;
-      }
+      @apply text-right p-6 text-3xl max-w-lg flex flex-col;
     }
   }
 }
