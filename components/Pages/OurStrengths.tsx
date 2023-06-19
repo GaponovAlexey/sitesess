@@ -1,4 +1,4 @@
-import s from "../../../styles/main.module.scss";
+import s from "../../styles/main.module.scss";
 
 const OurStrengths = () => {
   return (

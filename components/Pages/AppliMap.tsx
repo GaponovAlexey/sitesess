@@ -1,8 +1,6 @@
 "use client"
-import { addDoc, collection } from "firebase/firestore"
 import { useState } from "react"
-// import { db } from "../../../firebase"
-import CustomBut from "../utils/CustomBut"
+import CustomBut from "../Utils/CustomBut"
 
 const AppliMap = () => {
   // const usersColRef = collection(db, "users")
@@ -14,13 +12,7 @@ const AppliMap = () => {
 
   const add = async (e: any) => {
     e.preventDefault()
-    await addDoc(usersColRef, {
-      name: name,
-      company: company,
-      number: number,
-      email: email,
-      message: message,
-    })
+    
     setName("")
     setCompany("")
     setNumber(null)
