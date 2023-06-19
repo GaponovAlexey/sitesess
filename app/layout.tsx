@@ -1,6 +1,8 @@
 import "../styles/index.css"
 import "../styles/burger.css"
 import { JetBrains_Mono } from "next/font/google"
+import Header from "../components/Layout/Header"
+import Footer from "../components/Layout/Footer"
 
 const inter = JetBrains_Mono({ subsets: ["latin"] })
 
@@ -16,7 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

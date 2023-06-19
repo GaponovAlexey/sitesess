@@ -1,6 +1,7 @@
+"use client"
 import { useState } from "react"
-import s from "../../../styles/layout.module.scss"
-import Burger from "./burger"
+import s from "../../styles/layout.module.scss"
+import Burger from "../Burger/page"
 
 const Header = () => {
   const [open, setOpen] = useState(false)

@@ -1,17 +1,16 @@
-'use client'
-import { useRouter } from "next/router"
-import s from "../../../styles/layout.module.scss"
-import ScrollPath from "../utils/ScrollPath"
+"use client"
+import { usePathname } from "next/navigation"
+import s from "../../styles/layout.module.scss"
+import ScrollPath from "../Utils/ScrollPath"
 
-function Burger({ setIsOpen }) {
-  const loc = useRouter()
-  // Scroll to anchors
+function Burger({ setIsOpen }: any) {
+  const pathname = usePathname()
 
   return (
     <div className={s.burger_main}>
       <section className={s.burger_wrapper}>
         <div onClick={() => setIsOpen(false)} className={s.burger_routs}>
-          {loc.pathname == "/" ? (
+          {pathname == "/" ? (
             <ScrollPath to="home">
               <div onClick={() => setIsOpen(false)}>Home</div>
             </ScrollPath>
@@ -20,7 +19,7 @@ function Burger({ setIsOpen }) {
               <div onClick={() => setIsOpen(false)}>Home</div>
             </ScrollPath>
           )}
-          {loc.pathname == "/" ? (
+          {pathname == "/" ? (
             <ScrollPath to="landing">
               <div onClick={() => setIsOpen(false)}>landing</div>
             </ScrollPath>
@@ -29,7 +28,7 @@ function Burger({ setIsOpen }) {
               <div onClick={() => setIsOpen(false)}>landing</div>
             </ScrollPath>
           )}
-          {loc.pathname == "/" ? (
+          {pathname == "/" ? (
             <ScrollPath to="strengths">
               <div onClick={() => setIsOpen(false)}>Our strengths</div>
             </ScrollPath>
@@ -38,7 +37,7 @@ function Burger({ setIsOpen }) {
               <div onClick={() => setIsOpen(false)}>Our strengths</div>
             </ScrollPath>
           )}
-          {loc.pathname == "/" ? (
+          {pathname == "/" ? (
             <ScrollPath to="application">
               <div onClick={() => setIsOpen(false)}>Contact the manager</div>
             </ScrollPath>
@@ -47,7 +46,7 @@ function Burger({ setIsOpen }) {
               <div onClick={() => setIsOpen(false)}>Contact the manager</div>
             </ScrollPath>
           )}
-          {loc.pathname == "/" ? (
+          {pathname == "/" ? (
             <ScrollPath to="marketing">
               <div onClick={() => setIsOpen(false)}>Marketing</div>
             </ScrollPath>

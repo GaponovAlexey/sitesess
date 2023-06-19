@@ -1,4 +1,4 @@
-import s from "../../../styles/layout.module.scss"
+import s from "../../styles/layout.module.scss"
 const Footer = () => {
   return (
     <div className={s.footer_main}>
