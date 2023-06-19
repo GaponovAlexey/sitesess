@@ -2,7 +2,7 @@
   @apply min-h-screen;
   div {
     .devLogoText {
-      @apply pt-[20%] sm:pt-[85%] text-center text-xl;
+      @apply pt-[85%] sm:pt-[25%] text-center text-xl;
     }
     .logoText {
       @apply text-center tracking-widest font-bold sm:text-3xl text-[42px];
@@ -14,8 +14,7 @@
       @apply text-center text-gray-900 font-extrabold;
     }
   }
-   background: url("../assets/yes/bg2.webp")  center / cover;
-  // background: no-repeat url("../public/assets/bg2.jpg") center / cover;
+  background: no-repeat url("/assets/bg2.jpg") center / cover;
 }
 
 .container_main_four {
@@ -119,5 +118,5 @@
 }
 .answerWrapper {
   // @apply  h-screen ;
-  background: url("../public/assets/photo/mac.webp") no-repeat 99% 10% ;
+  background: url("../public/assets/photo/mac.webp") no-repeat 99% 10%;
 }
