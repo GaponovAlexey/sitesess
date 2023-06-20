@@ -14,7 +14,7 @@ const MainPageOne = () => {
           animate={{ x: 0 }}
           transition={{ delay: 0.2 }}
         >
-          The development company
+          The web development company
         </motion.div>
         <motion.div
           className={s.logoText}

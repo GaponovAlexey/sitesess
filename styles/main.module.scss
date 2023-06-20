@@ -117,5 +117,9 @@
   }
 }
 .answerWrapper {
-  background: url("/assets/photo/mac.webp") no-repeat 99% 10%;
+  // @apply grid grid-rows-2 ;
+}
+.answerImg {
+  @apply dark:invert dark:filter sm:bg-size-auto lg:bg-size-contain text-center xl:bg-size-cover mr-10;
+  background: url("/assets/photo/faq.webp") white no-repeat center / contain;
 }

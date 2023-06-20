@@ -5,7 +5,17 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        faq: "url('/assets/photo/faq.webp')",
+      }),
+
+      backgroundSize: {
+        "size-auto": "auto",
+        "size-cover": "cover",
+        "size-contain": "contain",
+      },
+    },
   },
   plugins: [],
 }

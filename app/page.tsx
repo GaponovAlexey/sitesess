@@ -11,7 +11,7 @@ export default function Home() {
       <MainPageOne />
       <AnswerBlock />
       <LandingUse />
-      <OurStrengths />
+      {/* <OurStrengths /> */}
       <AppliMap />
       <Marketing />
     </main>

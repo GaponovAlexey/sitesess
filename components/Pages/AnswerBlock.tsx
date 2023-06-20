@@ -73,44 +73,51 @@ const AnswerBlock = () => {
   const [activeAccordion, setActiveAccordion] = useState<any>(null)
 
   return (
-    <div className={s.answerWrapper}>
-      {DataAccordion?.map((accord) => {
-        return (
-          <div key={accord.id} className="hs-accordion-group pl-32 pt-10">
-            <div className="hs-accordion " id={`hs-basic-heading-${accord.id}`}>
-              <button
-                className="hs-accordion-toggle hs-accordion-active:text-blue-600
-            group py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left
-            text-gray-800 transition hover:text-gray-500 dark:hs-accordion-active:text-blue-500
-            dark:text-gray-200 dark:hover:text-gray-400"
-                aria-controls={`hs-basic-collapse-${accord.id}`}
-                onClick={() =>
-                  setActiveAccordion(
-                    accord.id === activeAccordion ? null : accord.id,
-                  )
-                }
-              >
-                <ElementSvg />
-                {accord.title}
-              </button>
+    <div className="grid sm:grid-cols-1 md:grid-cols-2 dark:bg-black bg-white h-screen">
+      <div className={`${s.answerWrapper} mt-[20%] order-2 dark:invert dark:filter `}>
+        {DataAccordion?.map((accord) => {
+          return (
+            <div key={accord.id} className="hs-accordion-group text-center ml-[10%] pb-2">
               <div
-                id={`hs-basic-collapse-${accord.id}`}
-                className={`${
-                  activeAccordion === accord.id ? "" : "hidden"
-                } hs-accordion-content  overflow-hidden transition-[height] duration-300`}
-                aria-labelledby={`hs-basic-heading-${accord.id}`}
+                className="hs-accordion "
+                id={`hs-basic-heading-${accord.id}`}
               >
-                <div>
-                  <p
-                    className="text-gray-800 max-w-[30rem] dark:text-gray-200"
-                    dangerouslySetInnerHTML={{ __html: accord.body }}
-                  ></p>
+                <button
+                  className="hs-accordion-toggle hs-accordion-active:text-blue-600
+                group py-3 inline-flex items-center gap-x-3 w-full font-semibold text-left
+            text-black transition hover:text-gray-500 
+            dark:hs-accordion-active:text-black
+            dark:text-black dark:hover:text-gray-400"
+                  aria-controls={`hs-basic-collapse-${accord.id}`}
+                  onClick={() =>
+                    setActiveAccordion(
+                      accord.id === activeAccordion ? null : accord.id,
+                    )
+                  }
+                >
+                  <ElementSvg />
+                  {accord.title}
+                </button>
+                <div
+                  id={`hs-basic-collapse-${accord.id}`}
+                  className={`${
+                    activeAccordion === accord.id ? "" : "hidden"
+                  } hs-accordion-content  overflow-hidden transition-[height] duration-300`}
+                  aria-labelledby={`hs-basic-heading-${accord.id}`}
+                >
+                  <div>
+                    <p
+                      className="text-gray-800 max-w-[30rem] dark:text-black"
+                      dangerouslySetInnerHTML={{ __html: accord.body }}
+                    ></p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        )
-      })}
+          )
+        })}
+      </div>
+      <div className={`${s.answerImg} sm:order-1 md:order-3 sm:mt-22  `}/>
     </div>
   )
 }
