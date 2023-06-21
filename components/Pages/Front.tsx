@@ -6,7 +6,7 @@ import ScrollPath from "../Utils/ScrollPath"
 
 const Front = () => {
   return (
-    <div className={s.container_main}>
+    <div className={s.front}>
       <div id="home">
         <motion.h1
           className={s.logoText}

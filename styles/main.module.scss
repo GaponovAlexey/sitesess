@@ -1,11 +1,11 @@
-.container_main {
+.front {
   @apply min-h-screen text-[#FFFAFA];
   div {
     .devLogoText {
       @apply text-center text-xl;
     }
     .logoText {
-      @apply pt-[85%] sm:pt-[25%] text-center tracking-widest font-bold sm:text-3xl text-[42px];
+      @apply pt-[85%] sm:pt-[20%] text-center tracking-widest font-bold sm:text-3xl text-[42px];
     }
     h2 {
       @apply text-center tracking-widest font-bold sm:text-3xl text-2xl pt-10;
@@ -108,8 +108,8 @@
 
 //faq
 .answerImg {
-  @apply dark:bg-[#1B1B1B] dark:invert dark:filter sm:bg-size-auto lg:bg-size-contain text-center xl:bg-size-cover mr-10;
   background: url("/assets/photo/faq.webp") no-repeat center / contain;
+  @apply dark:bg-[#1B1B1B] mr-[15%] sm:order-1 md:order-2;
 }
 
 .marketing_map {
