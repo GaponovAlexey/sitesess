@@ -1,13 +1,21 @@
-'use client'
-import CustomBut from "../Utils/CustomBut"
-import s from "../../styles/main.module.scss"
-import ScrollPath from "../Utils/ScrollPath"
+"use client"
 import { motion } from "framer-motion"
+import s from "../../styles/main.module.scss"
+import CustomBut from "../Utils/CustomBut"
+import ScrollPath from "../Utils/ScrollPath"
 
-const MainPageOne = () => {
+const Front = () => {
   return (
     <div className={s.container_main}>
       <div id="home">
+        <motion.h1
+          className={s.logoText}
+          initial={{ x: +400 }}
+          animate={{ x: 0 }}
+          transition={{ delay: 0.1 }}
+        >
+          Sitesess.ca
+        </motion.h1>
         <motion.div
           className={s.devLogoText}
           initial={{ x: -400 }}
@@ -15,14 +23,6 @@ const MainPageOne = () => {
           transition={{ delay: 0.2 }}
         >
           The web development company
-        </motion.div>
-        <motion.div
-          className={s.logoText}
-          initial={{ x: +400 }}
-          animate={{ x: 0 }}
-          transition={{ delay: 0.1 }}
-        >
-          Sitesess.ca
         </motion.div>
         <motion.h2
           initial={{ x: +400 }}
@@ -54,4 +54,4 @@ const MainPageOne = () => {
   )
 }
 
-export default MainPageOne
+export default Front

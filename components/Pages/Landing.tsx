@@ -1,6 +1,6 @@
 import s from "../../styles/main.module.scss"
 
-const LandingUse = () => {
+const Landing = () => {
   return (
     <section id="landing" className={s.landing}>
       <div className={s.landing_use}>
@@ -78,4 +78,4 @@ const LandingUse = () => {
   )
 }
 
-export default LandingUse
+export default Landing

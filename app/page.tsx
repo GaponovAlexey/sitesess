@@ -1,18 +1,16 @@
-import AnswerBlock from "../components/Pages/FAQ"
-import AppliMap from "../components/Pages/AppliMap"
-import LandingUse from "../components/Pages/LandingUse"
-import MainPageOne from "../components/Pages/MainPageOne"
+import FAQ from "../components/Pages/FAQ"
+import Front from "../components/Pages/Front"
+import Landing from "../components/Pages/Landing"
+import Map from "../components/Pages/Map"
 import Marketing from "../components/Pages/Marketing"
-import OurStrengths from "../components/Pages/OurStrengths"
 
 export default function Home() {
   return (
     <main>
-      <MainPageOne />
-      <LandingUse />
-      <AnswerBlock />
-      {/* <OurStrengths /> */}
-      <AppliMap />
+      <Front />
+      <Landing />
+      <FAQ />
+      <Map />
       <Marketing />
     </main>
   )

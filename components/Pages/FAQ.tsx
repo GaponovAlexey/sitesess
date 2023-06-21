@@ -69,15 +69,18 @@ const DataAccordion = [
   },
 ]
 
-const AnswerBlock = () => {
+const FAQ = () => {
   const [activeAccordion, setActiveAccordion] = useState<any>(null)
 
   return (
-    <div className="grid sm:grid-cols-1 md:grid-cols-2 dark:bg-[#111111] bg-white h-screen">
-      <div className={`${s.answerWrapper} mt-[20%] order-2 dark:invert dark:filter `}>
+    <div className="grid sm:grid-cols-1 md:grid-cols-2 dark:bg-[#1B1B1B] bg-white">
+      <div className={`${s.answerWrapper} mt-[10%] mb-[10%] order-2 `}>
         {DataAccordion?.map((accord) => {
           return (
-            <div key={accord.id} className="hs-accordion-group text-center ml-[10%] pb-2">
+            <div
+              key={accord.id}
+              className="hs-accordion-group text-center mx-[10%]  "
+            >
               <div
                 className="hs-accordion "
                 id={`hs-basic-heading-${accord.id}`}
@@ -117,12 +120,14 @@ const AnswerBlock = () => {
           )
         })}
       </div>
-      <div className={`${s.answerImg} dark:bg-[#111111] sm:order-1 md:order-3 sm:mt-22  `}/>
+      <div
+        className={`${s.answerImg} dark:bg-[#1B1B1B] sm:order-1 sm:mt-22  `}
+      />
     </div>
   )
 }
 
-export default AnswerBlock
+export default FAQ
 
 const ElementSvg = () => {
   return (

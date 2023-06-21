@@ -20,8 +20,8 @@ const AppliMap = () => {
     setMessage("")
   }
   return (
-    <div className="relative z-4">
-      <section id="application" className=" body-font ">
+    <div className="relative z-4 ">
+      <section id="application">
         <div className="absolute inset-0 bg-gray-300">
           <iframe
             width="100%"
@@ -32,13 +32,13 @@ const AppliMap = () => {
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20588.168242971704!2d-97.094436!3d49.8326668!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea76508470dde5%3A0x5c70e599990bc52e!2s206%20Sterling%20Ave%2C%20Winnipeg%2C%20MB%20R2M%202R7!5e0!3m2!1sru!2sca!4v1668665016949!5m2!1sru!2sca"
           ></iframe>
         </div>
-        <div className="container min-w-[18rem] sm:px-0 px-8 py-4 mx-auto flex ">
+        <div className="container min-w-[18rem] sm:px-0 px-12 left-19 py-4 mx-auto flex flex-wrap">
           <form
-            className="lg:w-1/3 md:w-1/2 bg-white dark:text-white dark:bg-[#111111]  rounded-lg p-8 flex flex-col md:ml-auto  mt-20 sm:mt-0 relative z-10 shadow-md"
+            className="lg:w-1/3 md:w-1/2 bg-white dark:text-white dark:bg-[#1B1B1B]  rounded-lg p-8 flex flex-col md:ml-auto  mt-20 sm:mt-0 relative z-10 shadow-md"
             onSubmit={add}
           >
-            <h2 className="text-lg mb-1 font-medium title-font">
-              Fll out the form and we will contact you
+            <h2 className="text-lg mb-1 font-medium title-font text-center">
+              Complete the form, we&apos;ll be in touch.
             </h2>
 
             <div className="relative mb-4 dark:text-white">
@@ -57,9 +57,14 @@ const AppliMap = () => {
                 onInput={(e: any) => setCompany(e.currentTarget.value)}
                 className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
-              <label className="leading-7 text-sm ">
-                Number *
-              </label>
+              <label className="leading-7 text-sm ">you want to</label>
+              <input
+                type="name"
+                value={company}
+                onInput={(e: any) => setCompany(e.currentTarget.value)}
+                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+              <label className="leading-7 text-sm ">Number *</label>
               <input
                 type="tel"
                 required
@@ -88,9 +93,7 @@ const AppliMap = () => {
             <button className="inline-block">
               <CustomBut name="Connect us" />
             </button>
-            <p className="text-xs  mt-3">
-              We will contact you shortly
-            </p>
+            <p className="text-xs text-center  mt-3">We will contact you shortly</p>
           </form>
         </div>
       </section>
