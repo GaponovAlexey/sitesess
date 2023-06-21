@@ -12,7 +12,7 @@ const AppliMap = () => {
 
   const add = async (e: any) => {
     e.preventDefault()
-    
+
     setName("")
     setCompany("")
     setNumber(null)
@@ -21,7 +21,7 @@ const AppliMap = () => {
   }
   return (
     <div className="relative z-4">
-      <section id="application" className="text-gray-600 body-font ">
+      <section id="application" className=" body-font ">
         <div className="absolute inset-0 bg-gray-300">
           <iframe
             width="100%"
@@ -34,30 +34,30 @@ const AppliMap = () => {
         </div>
         <div className="container min-w-[18rem] sm:px-0 px-8 py-4 mx-auto flex ">
           <form
+            className="lg:w-1/3 md:w-1/2 bg-white dark:text-white dark:bg-[#111111]  rounded-lg p-8 flex flex-col md:ml-auto  mt-20 sm:mt-0 relative z-10 shadow-md"
             onSubmit={add}
-            className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto  mt-10 sm:mt-0 relative z-10 shadow-md"
           >
-            <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
+            <h2 className="text-lg mb-1 font-medium title-font">
               Fll out the form and we will contact you
             </h2>
 
-            <div className="relative mb-4">
-              <label className="leading-7 text-sm text-gray-600">Name *</label>
+            <div className="relative mb-4 dark:text-white">
+              <label className="leading-7 text-sm  ">Name *</label>
               <input
                 type="name"
                 value={name}
                 onInput={(e: any) => setName(e.currentTarget.value)}
                 required
-                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
-              <label className="leading-7 text-sm text-gray-600">Company</label>
+              <label className="leading-7 text-sm ">Company</label>
               <input
                 type="name"
                 value={company}
                 onInput={(e: any) => setCompany(e.currentTarget.value)}
-                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
-              <label className="leading-7 text-sm text-gray-600">
+              <label className="leading-7 text-sm ">
                 Number *
               </label>
               <input
@@ -66,15 +66,15 @@ const AppliMap = () => {
                 value={number}
                 onInput={(e: any) => setNumber(e.currentTarget.value)}
                 // pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200  outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
-              <label className="leading-7 text-sm text-gray-600">Email *</label>
+              <label className="leading-7 text-sm ">Email *</label>
               <input
                 type="email"
                 required
                 value={email}
                 onInput={(e: any) => setEmail(e.currentTarget.value)}
-                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
             </div>
             <div className="relative ">
@@ -82,13 +82,13 @@ const AppliMap = () => {
               <textarea
                 value={message}
                 onInput={(e: any) => setMessage(e.currentTarget.value)}
-                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </div>
             <button className="inline-block">
               <CustomBut name="Connect us" />
             </button>
-            <p className="text-xs text-gray-500 mt-3">
+            <p className="text-xs  mt-3">
               We will contact you shortly
             </p>
           </form>

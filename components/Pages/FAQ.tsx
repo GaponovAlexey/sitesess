@@ -73,7 +73,7 @@ const AnswerBlock = () => {
   const [activeAccordion, setActiveAccordion] = useState<any>(null)
 
   return (
-    <div className="grid sm:grid-cols-1 md:grid-cols-2 dark:bg-black bg-white h-screen">
+    <div className="grid sm:grid-cols-1 md:grid-cols-2 dark:bg-[#111111] bg-white h-screen">
       <div className={`${s.answerWrapper} mt-[20%] order-2 dark:invert dark:filter `}>
         {DataAccordion?.map((accord) => {
           return (
@@ -117,7 +117,7 @@ const AnswerBlock = () => {
           )
         })}
       </div>
-      <div className={`${s.answerImg} sm:order-1 md:order-3 sm:mt-22  `}/>
+      <div className={`${s.answerImg} dark:bg-[#111111] sm:order-1 md:order-3 sm:mt-22  `}/>
     </div>
   )
 }

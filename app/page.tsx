@@ -1,4 +1,4 @@
-import AnswerBlock from "../components/Pages/AnswerBlock"
+import AnswerBlock from "../components/Pages/FAQ"
 import AppliMap from "../components/Pages/AppliMap"
 import LandingUse from "../components/Pages/LandingUse"
 import MainPageOne from "../components/Pages/MainPageOne"
@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <main>
       <MainPageOne />
-      <AnswerBlock />
       <LandingUse />
+      <AnswerBlock />
       {/* <OurStrengths /> */}
       <AppliMap />
       <Marketing />
