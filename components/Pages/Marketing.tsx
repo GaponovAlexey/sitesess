@@ -3,7 +3,7 @@ import s from "../../styles/main.module.scss"
 const Marketing = () => {
   return (
     <>
-      <div id="marketing" className="main_marketing">
+      <div id="marketing">
         <div className={s.marketing_map}></div>
       </div>
     </>
