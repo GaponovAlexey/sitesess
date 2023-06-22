@@ -2,7 +2,7 @@ import s from "../../styles/main.module.scss";
 
 const OurStrengths = () => {
   return (
-    <div id="strengths" className={s.container_main_four}>
+    <div id="strengths" className={s.strengths}>
       <div className={s.img}>
         <div className={s.skills}>
           <div>

@@ -75,7 +75,7 @@ const FAQ = () => {
   return (
     <div className="grid  md:grid-cols-2 dark:bg-[#1B1B1B] bg-white">
       <div
-        className={`${s.answerWrapper} mt-[10%] mb-[10%] sm:order-2 md:order-1 `}
+        className={`${s.answerWrapper} mt-[10%] mb-[20%] sm:order-2 md:order-1 `}
       >
         {DataAccordion?.map((accord) => {
           return (

@@ -4,7 +4,7 @@ const Marketing = () => {
   return (
     <>
       <div id="marketing">
-        <div className={s.marketing_map}></div>
+        <div className={s.marketing}></div>
       </div>
     </>
   )

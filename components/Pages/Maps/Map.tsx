@@ -8,12 +8,13 @@ const ApplyMap = () => {
   // const usersColRef = collection(db, "users")
   const [name, setName] = useState<string>("")
   const [company, setCompany] = useState<string>("")
-  const [number, setNumber] = useState<any | null>(0)
+  const [number, setNumber] = useState<any | null>(null)
   const [email, setEmail] = useState<string>("")
   const [message, setMessage] = useState<string>("")
 
   const add = async (e: any) => {
     e.preventDefault()
+    // Send data
     setName("")
     setCompany("")
     setNumber(null)
@@ -25,7 +26,7 @@ const ApplyMap = () => {
     <div className="relative  z-4">
       <section id="application">
         <GoogleMapComponent />
-        <div className="absolute top-0 left-0 container px-4 md:px-12 left-19 py-4 md:py-10">
+        <div className="absolute top-0 left-0 container px-4 md:px-12 left-19 py-4 ">
           <form
             className="lg:w-1/3 md:w-1/2 bg-white dark:text-white dark:bg-[#242424]  rounded-lg p-8 flex flex-col md:ml-auto  mt-20 sm:mt-0 relative z-10 shadow-md"
             onSubmit={add}
@@ -35,7 +36,7 @@ const ApplyMap = () => {
             </h2>
 
             <div className="relative mb-4 dark:text-white">
-              <label className="leading-7 text-sm  ">Name *</label>
+              <label className="leading-7 text-sm  ">Name</label>
               <input
                 type="name"
                 value={name}
@@ -43,24 +44,17 @@ const ApplyMap = () => {
                 required
                 className="w-full bg-white dark:bg-[#9E9E9E] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
-              <label className="leading-7 text-sm ">Company</label>
+              <label className="leading-7 text-sm ">you need</label>
               <input
                 type="name"
                 value={company}
                 onInput={(e: any) => setCompany(e.currentTarget.value)}
                 className="w-full dark:bg-[#9E9E9E] bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
-              <label className="leading-7 text-sm ">you want to</label>
-              <input
-                type="name"
-                value={company}
-                onInput={(e: any) => setCompany(e.currentTarget.value)}
-                className="w-full bg-white dark:bg-[#9E9E9E] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-              <label className="leading-7 text-sm ">Number *</label>
+             
+              <label className="leading-7 text-sm ">Number (optional)</label>
               <input
                 type="tel"
-                required
                 value={number}
                 onInput={(e: any) => setNumber(e.currentTarget.value)}
                 // pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"

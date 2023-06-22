@@ -3,6 +3,7 @@ import Front from "../components/Pages/Front"
 import Landing from "../components/Pages/Landing"
 import Map from "../components/Pages/Maps/Map"
 import Marketing from "../components/Pages/Marketing"
+import OurStrengths from "../components/Pages/OurStrengths"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Front />
       <Landing />
       <FAQ />
+      <OurStrengths />
       <Map />
       <Marketing />
     </main>
