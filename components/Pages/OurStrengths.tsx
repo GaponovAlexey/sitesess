@@ -1,9 +1,9 @@
-import s from "../../styles/main.module.scss";
+import s from "../../styles/main.module.scss"
 
 const OurStrengths = () => {
   return (
     <div id="strengths" className={s.strengths}>
-      <div className={s.img}>
+      <div>
         <div className={s.skills}>
           <div>
             <h2>Our strengths</h2>
@@ -19,11 +19,11 @@ const OurStrengths = () => {
               <li className={s.nine}>We use targeted advertising</li>
             </ul>
           </div>
-          <div></div>
+          <div className={s.img}></div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default OurStrengths;
+export default OurStrengths
