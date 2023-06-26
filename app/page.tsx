@@ -15,8 +15,8 @@ export default function Home() {
       <Landing />
       <Step />
       <OurStrengths />
-      <FAQ />
       <Map />
+      <FAQ />
       <Marketing />
     </main>
   )
