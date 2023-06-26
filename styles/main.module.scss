@@ -18,7 +18,7 @@
 }
 
 .strengths {
-  @apply min-h-full pb-2 md:pb-24 bg-white text-white dark:bg-[#1B1B1B];
+  @apply min-h-full md:pb-24 bg-white text-white dark:bg-gray-900;
   .skills {
     @apply invert dark:invert-0 grid grid-cols-1  md:grid-cols-2;
     h2 {
@@ -69,12 +69,12 @@
   }
   .img {
     background: no-repeat url("/assets/photo/weme.webp") center / contain;
-    @apply mt-44 mx-[7%];
+    @apply mt-44 md:mx-[7%];
   }
 }
 
 .landing {
-  @apply min-h-screen  bg-[#FFFAFA] dark:bg-[#1B1B1B] pt-[5%];
+  @apply min-h-screen  bg-[#FFFAFA] dark:bg-gray-900 pt-[5%];
   .landing_use {
     div {
       @apply px-[5%] py-[3%] mx-auto;
@@ -128,11 +128,10 @@
 //faq
 .answerImg {
   background: url("/assets/photo/faq.webp") no-repeat center / contain;
-  @apply dark:bg-[#1B1B1B] mr-[15%] sm:order-1 md:order-2;
+  @apply dark:bg-gray-900 mr-[15%] sm:order-1 md:order-2;
 }
 
 .marketing {
   background: no-repeat url("/assets/svg/m2.svg") 50% / contain;
-  @apply h-full dark:bg-[#1B1B1B] pt-64;
+  @apply h-full dark:bg-gray-900 pt-64;
 }
-

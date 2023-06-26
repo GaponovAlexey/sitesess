@@ -1,6 +1,6 @@
 "use client"
+import { useEffect, useRef, useState } from "react"
 import "./works.css"
-import React, { useEffect, useRef, useState } from "react"
 
 const i1 = "../../../public/assets/bg2.jpg"
 const i2 = "../../../public/assets/bg2.jpg"
