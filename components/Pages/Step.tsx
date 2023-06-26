@@ -5,13 +5,13 @@ const Step = () => {
     <div>
       <section className="text-gray-400 bg-white dark:bg-gray-900 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
-          <div className="flex flex-wrap w-full">
+          <div className="flex justify-between flex-wrap">
             <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6 dark:text-white text-black">
               <div className="flex relative pb-12 ">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-800 pointer-events-none"></div>
                 </div>
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sky-500 inline-flex items-center justify-center text-white relative z-10">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -38,7 +38,7 @@ const Step = () => {
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-800 pointer-events-none"></div>
                 </div>
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-sky-600 inline-flex items-center justify-center text-white relative z-10">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -65,7 +65,7 @@ const Step = () => {
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-800 pointer-events-none"></div>
                 </div>
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 inline-flex items-center justify-center text-white relative z-10">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -93,7 +93,7 @@ const Step = () => {
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-800 pointer-events-none"></div>
                 </div>
-                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-green-700 inline-flex items-center justify-center text-white relative z-10">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-700 inline-flex items-center justify-center text-white relative z-10">
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -144,10 +144,9 @@ const Step = () => {
               </div>
             </div>
             <Image
-              height={1200}
-              width={1200}
-              
-              className="lg:w-3/5 bg-current md:w-1/3 object-cover object-center rounded-lg md:mt-0 mt-12"
+              height={1000}
+              width={1000}
+              className="object-cover lg:h-[90vh] lg:w-[77vh] flex self-center md:h-1/2 md:w-1/2"
               src="/assets/step.png"
               alt="step"
             />
