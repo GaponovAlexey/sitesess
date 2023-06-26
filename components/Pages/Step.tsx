@@ -5,7 +5,7 @@ const Step = () => {
     <div>
       <section className="text-gray-400 bg-white dark:bg-gray-900 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
-          <div className="flex justify-between flex-wrap">
+          <div className="flex justify-center flex-wrap">
             <div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6 dark:text-white text-black">
               <div className="flex relative pb-12 ">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
@@ -144,9 +144,9 @@ const Step = () => {
               </div>
             </div>
             <Image
-              height={1000}
-              width={1000}
-              className="object-cover lg:h-[90vh] lg:w-[77vh] flex self-center md:h-1/2 md:w-1/2"
+              height={1200}
+              width={1200}
+              className="object-contain  h-[30%] w-[30%] md:h-[70%] md:w-[60%]"
               src="/assets/step.png"
               alt="step"
             />
