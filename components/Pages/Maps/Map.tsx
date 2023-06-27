@@ -28,7 +28,7 @@ const ApplyMap = () => {
         <GoogleMapComponent />
         <div className="absolute top-0 left-0 container px-4 md:px-12 left-19 py-4 ">
           <form
-            className="lg:w-1/3 md:w-1/2 bg-white dark:text-white dark:bg-gray-900   rounded-lg p-8 flex flex-col md:ml-auto  mt-20 sm:mt-0 relative z-10 shadow-md"
+            className="lg:w-1/3 md:w-1/2 bg-white dark:text-white    rounded-lg p-8 flex flex-col md:ml-auto  mt-20 sm:mt-0 relative z-10 shadow-md"
             onSubmit={add}
           >
             <h2 className="text-lg mb-1 font-medium title-font text-center">

@@ -9,7 +9,7 @@ import OurWorks from "../components/Pages/works/OurWorks"
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-[#FFFAFA] dark:bg-gray-900" >
       <Front />
       <OurWorks />
       <Landing />

@@ -7,7 +7,7 @@
 .burger_main {
   @apply fixed -z-20 overflow-hidden bg-gray-900 bg-opacity-80 inset-0  ease-in-out;
   .burger_wrapper {
-    @apply w-screen pt-20 cursor-pointer max-w-[30rem] right-0 text-black absolute bg-white h-full shadow-xl duration-[4000ms] transform;
+    @apply w-screen pt-20 cursor-pointer max-w-[30rem] right-0 text-black absolute bg-[#FFFAFA] h-full shadow-xl duration-[4000ms] transform;
     .burger_routs {
       @apply text-right p-6 text-3xl max-w-lg flex flex-col;
     }
@@ -15,7 +15,7 @@
 }
 
 .footer_main {
-  @apply h-auto dark:bg-gray-900 py-14 text-center;
+  @apply h-auto bg-[#FFFAFA] dark:bg-gray-900 py-14 text-center;
   ul {
     @apply flex justify-center m-0;
     li {

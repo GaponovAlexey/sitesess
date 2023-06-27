@@ -73,7 +73,7 @@ const FAQ = () => {
   const [activeAccordion, setActiveAccordion] = useState<any>(null)
 
   return (
-    <div className="grid px-[2%] md:grid-cols-2 dark:bg-gray-900 bg-white">
+    <div className="grid px-[2%] md:grid-cols-2">
       <div
         className={`${s.answerWrapper} mt-[10%] mb-[20%] sm:order-2 md:order-1 `}
       >
