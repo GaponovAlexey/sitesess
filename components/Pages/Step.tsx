@@ -3,10 +3,10 @@ import Image from "next/image"
 const Step = () => {
   return (
     <div>
-      <section className="text-gray-400 pb-32 px-[2%] md:pb-10 bg-[#FFFAFA]  dark:bg-gray-900 ">
-        <div className="container mx-auto pt-10  flex flex-wrap">
+      <section className="text-gray-400 pb-32 px-[2%] md:px-0 md:pb-0 bg-[#FFFAFA]  dark:bg-gray-900 ">
+        <div className="container mx-auto pt-10 flex flex-wrap">
           <div className="flex justify-center flex-wrap md:flex-nowrap">
-            <div className="lg:w-2/5 md:w-1/2 dark:text-white text-black">
+            <div className=" dark:text-white text-black">
               <div className="flex relative pb-12 ">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
                   <div className="h-full w-1 bg-gray-800 pointer-events-none"></div>
@@ -146,7 +146,8 @@ const Step = () => {
             <Image
               height={1200}
               width={1200}
-              className="object-contain flex-row justify-center h-[40%] w-[40%] md:h-[70%] md:w-[60%]"
+              // className="object-contain flex-row justify-center h-[40%] w-[40%] md:h-[70%] md:w-[60%]"
+              className="object-contain md:hide lg:visible flex-row justify-center h-[40%] w-[40%] md:h-[70%] "
               src="/assets/step.png"
               alt="step"
             />
