@@ -23,7 +23,7 @@ const ApplyMap = () => {
   }
 
   return (
-    <div className="relative dark:text-gray-900 z-4">
+    <div className="relative dark:text-gray-100 z-4">
       <section id="application">
         <GoogleMapComponent />
         <div className="absolute top-0 left-0 container px-4 md:px-12 left-19 py-4 ">
@@ -51,7 +51,7 @@ const ApplyMap = () => {
                 onInput={(e: any) => setCompany(e.currentTarget.value)}
                 className="w-full dark:bg-[#9E9E9E] bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
-             
+
               <label className="leading-7 text-sm ">Number (optional)</label>
               <input
                 type="tel"

@@ -32,6 +32,9 @@
     .skills_element {
       @apply pt-20 grid grid-cols-3 md:grid-cols-4 text-center;
       li {
+        div {
+          @apply mb-5;
+        } 
         @apply text-black pb-10 dark:text-blue-400 text-sm;
         strong {
           background: linear-gradient(
