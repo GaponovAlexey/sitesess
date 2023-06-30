@@ -144,7 +144,7 @@
 //faq
 .answerImg {
   background: url("/assets/photo/faq.webp") no-repeat center / contain;
-  @apply mr-[15%];
+  @apply dark:invert mr-[15%];
 }
 .marketing {
   background: no-repeat url("/assets/svg/m2.svg") 50% / contain;
