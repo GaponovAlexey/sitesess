@@ -1,11 +1,12 @@
-import Image from "next/image"
-
+import s from "../../styles/main.module.scss"
 const Step = () => {
   return (
     <div>
       <section className="text-gray-400 pb-32  px-[2%] md:px-0  bg-[#FFFAFA] lg:pt-10  md:pb-20  dark:bg-gray-900 ">
         <div className="container mx-auto pt-10 flex flex-wrap ">
-          <h1 className="text-center text-2xl pb-20 text-black">
+          <h1
+            className={`${s.colorText} text-center text-2xl pb-20 text-black`}
+          >
             Our app design incorporates both user experience (UX) and user
             interface (UI). From color scheme to font selection to the types of
             widgets and buttons, we cover it all.
@@ -192,12 +193,12 @@ const Step = () => {
               alt="step"
             /> */}
           </div>
-            <div className="pt-10 text-black text-xl text-center flex justify-center flex-wrap" >
-              At our company, we believe in a collaborative and iterative
-              approach. We&apos;re dedicated to improving and refining each
-              stage of the process as needed to deliver a final product that
-              truly meets your needs and exceeds your expectations.
-            </div>
+          <div className={`${s.colorTextSmall} pt-10 text-center`}>
+            At our company, we believe in a collaborative and iterative
+            approach. We&apos;re dedicated to improving and refining each stage
+            of the process as needed to deliver a final product that truly meets
+            your needs and exceeds your expectations.
+          </div>
         </div>
       </section>
     </div>
