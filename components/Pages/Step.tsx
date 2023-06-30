@@ -3,14 +3,14 @@ import Image from "next/image"
 const Step = () => {
   return (
     <div>
-      <section className="text-gray-400 pb-32  px-[2%] md:px-0 md:pb-0 bg-[#FFFAFA] lg:pt-10  md:pb-20  dark:bg-gray-900 ">
+      <section className="text-gray-400 pb-32  px-[2%] md:px-0  bg-[#FFFAFA] lg:pt-10  md:pb-20  dark:bg-gray-900 ">
         <div className="container mx-auto pt-10 flex flex-wrap ">
-        <h1 className="text-center text-2xl pb-20 text-black" >
-          Our app design incorporates both user experience (UX) and user
-          interface (UI). From color scheme to font selection to the types of
-          widgets and buttons, we cover it all.
-        </h1>
-          <div className="flex justify-center flex-wrap md:flex-nowrap">
+          <h1 className="text-center text-2xl pb-20 text-black">
+            Our app design incorporates both user experience (UX) and user
+            interface (UI). From color scheme to font selection to the types of
+            widgets and buttons, we cover it all.
+          </h1>
+          <div className="flex justify-center flex-wrap ">
             <div className=" dark:text-white text-black">
               <div className="flex relative pb-12 ">
                 <div className="h-full w-10 absolute inset-0 flex items-center justify-center">
@@ -33,7 +33,17 @@ const Step = () => {
                   <h2 className="font-medium title-font text-sm   mb-1 tracking-wider">
                     STEP 1
                   </h2>
-                  <p className="leading-relaxed">Design Discovery</p>
+                  <h2 className="font-medium title-font text-sm   mb-1 tracking-wider">
+                    DEFINE
+                  </h2>
+                  <p className="leading-relaxed">
+                    At our company, we start by thoroughly understanding your
+                    needs. We conduct interviews, surveys, and utilize our
+                    extensive market research to gain a deep understanding of
+                    the specific problem that your website needs to solve. This
+                    user-centered approach allows us to align our goals with
+                    yours and target the right audience effectively.
+                  </p>
                 </div>
               </div>
               <div className="flex relative pb-12">
@@ -57,9 +67,16 @@ const Step = () => {
                   <h2 className="font-medium title-font text-sm  mb-1 tracking-wider">
                     STEP 2
                   </h2>
+                  <h2 className="font-medium title-font text-sm  mb-1 tracking-wider">
+                    IDEATE
+                  </h2>
                   <p className="leading-relaxed">
-                    Vice migas literally kitsch +1 pok pok. Truffaut hot chicken
-                    slow-carb health goth, vape typewriter.
+                    Once we&apos;ve defined the problem, our creative team
+                    starts brainstorming potential solutions. This process is
+                    about thinking outside the box and generating a wide range
+                    of ideas. We use various techniques, like mind mapping and
+                    sketching, to ensure we explore all possible angles and
+                    innovative solutions.
                   </p>
                 </div>
               </div>
@@ -85,9 +102,16 @@ const Step = () => {
                   <h2 className="font-medium title-font text-sm  mb-1 tracking-wider">
                     STEP 3
                   </h2>
+                  <h2 className="font-medium title-font text-sm  mb-1 tracking-wider">
+                    DESIGN
+                  </h2>
                   <p className="leading-relaxed">
-                    Coloring book nar whal glossier master cleanse umami. Salvia
-                    +1 master cleanse blog taiyaki.
+                    After ideating potential solutions, our design team gets to
+                    work transforming these ideas into tangible designs. We
+                    consider all aspects of user interface (UI), user experience
+                    (UX), color schemes, typography, and imagery to create
+                    designs that not only look good but also provide an
+                    intuitive and seamless experience for your users.
                   </p>
                 </div>
               </div>
@@ -113,9 +137,16 @@ const Step = () => {
                   <h2 className="font-medium title-font text-sm  mb-1 tracking-wider">
                     STEP 4
                   </h2>
+                  <h2 className="font-medium title-font text-sm  mb-1 tracking-wider">
+                    PROTOTYPE
+                  </h2>
                   <p className="leading-relaxed">
-                    VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
-                    Kinfolk bespoke try-hard cliche palo santo offal.
+                    Next, we build a working prototype of your website. This is
+                    a crucial step where the ideas and designs come to life. Our
+                    prototypes are interactive, allowing you to see and feel
+                    what your final website will look like. This tangible model
+                    enables us to gather feedback and make necessary adjustments
+                    before finalizing the design.
                   </p>
                 </div>
               </div>
@@ -138,22 +169,35 @@ const Step = () => {
                   <h2 className="font-medium title-font text-sm  mb-1 tracking-wider">
                     FINISH
                   </h2>
+                  <h2 className="font-medium title-font text-sm  mb-1 tracking-wider">
+                    TESTING
+                  </h2>
                   <p className="leading-relaxed">
-                    Pitchfork ugh tattooed scenester echo park gastropub
-                    whatever cold-pressed retro.
+                    Lastly, we conduct extensive testing on the prototype to
+                    ensure it performs as expected. This stage involves
+                    usability testing, A/B testing, and gathering user feedback
+                    to identify any potential issues or areas for improvement.
+                    We&apos;re committed to refining our work until it meets
+                    both our standards and your satisfaction
                   </p>
                 </div>
               </div>
             </div>
-            <Image
+            {/* <Image
               height={1200}
               width={1200}
               // className="object-contain flex-row justify-center h-[40%] w-[40%] md:h-[70%] md:w-[60%]"
               className="object-contain md:hide lg:visible flex-row justify-center h-[40%] w-[40%] md:h-[70%] "
               src="/assets/step.png"
               alt="step"
-            />
+            /> */}
           </div>
+            <div className="pt-10 text-black text-xl text-center flex justify-center flex-wrap" >
+              At our company, we believe in a collaborative and iterative
+              approach. We&apos;re dedicated to improving and refining each
+              stage of the process as needed to deliver a final product that
+              truly meets your needs and exceeds your expectations.
+            </div>
         </div>
       </section>
     </div>
