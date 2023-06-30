@@ -3,7 +3,7 @@ import Image from "next/image"
 const Step = () => {
   return (
     <div>
-      <section className="text-gray-400 pb-32 px-[2%] md:px-0 md:pb-0 bg-[#FFFAFA]  dark:bg-gray-900 ">
+      <section className="text-gray-400 pb-32 px-[2%] md:px-0 md:pb-0 bg-[#FFFAFA] lg:pt-10  dark:bg-gray-900 ">
         <div className="container mx-auto pt-10 flex flex-wrap">
           <div className="flex justify-center flex-wrap md:flex-nowrap">
             <div className=" dark:text-white text-black">

@@ -19,7 +19,7 @@
 
 // our Strengths
 .strengths {
-  @apply container mx-auto px-[2%] pb-24 pt-10  ;
+  @apply container   mx-auto px-[2%] pb-24 pt-10;
   .skills {
     h2 {
       @apply text-center text-3xl  font-bold md:pt-14 lg:pt-0;
@@ -34,17 +34,10 @@
       li {
         div {
           @apply mb-5;
-        } 
+        }
         @apply text-black pb-10 dark:text-blue-400 text-sm;
         strong {
-          background: linear-gradient(
-            10deg,
-            green,
-            blue,
-            indigo,
-            violet,
-            red
-          );
+          background: linear-gradient(10deg, green, blue, indigo, violet, red);
           background-clip: text;
           -webkit-background-clip: text;
           color: transparent;
@@ -96,7 +89,7 @@
 }
 
 .landing {
-  @apply dark:bg-gray-900 flex flex-wrap bg-[#FFFAFA] pt-[5%];
+  @apply dark:bg-gray-900 flex flex-wrap bg-[#FAFAFA] pt-[5%];
   .landing_use {
     @apply container mx-auto px-[2%];
     .landing_use_top {
@@ -148,9 +141,8 @@
 //faq
 .answerImg {
   background: url("/assets/photo/faq.webp") no-repeat center / contain;
-  @apply  mr-[15%] sm:order-1 md:order-2;
+  @apply mr-[15%];
 }
-
 .marketing {
   background: no-repeat url("/assets/svg/m2.svg") 50% / contain;
   @apply h-full pt-64;
