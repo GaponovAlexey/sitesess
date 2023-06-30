@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <main className="dark:bg-gray-900">
       <Front />
-      <OurWorks />
       <Landing />
-      <Step />
+      <OurWorks />
       <OurStrengths />
+      <Step />
       <Map />
       <FAQ />
       <Marketing />
