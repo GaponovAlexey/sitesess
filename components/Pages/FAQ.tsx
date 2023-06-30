@@ -96,7 +96,7 @@ const FAQ = () => {
                 >
                   <div>
                     <p
-                      className="text-gray-800 max-w-[480px] dark:text-white"
+                      className="dark:text-gray-100 text-left"
                       dangerouslySetInnerHTML={{ __html: accord.body }}
                     ></p>
                   </div>

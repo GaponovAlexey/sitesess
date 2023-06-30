@@ -3,8 +3,13 @@ import Image from "next/image"
 const Step = () => {
   return (
     <div>
-      <section className="text-gray-400 pb-32 px-[2%] md:px-0 md:pb-0 bg-[#FFFAFA] lg:pt-10  dark:bg-gray-900 ">
-        <div className="container mx-auto pt-10 flex flex-wrap">
+      <section className="text-gray-400 pb-32  px-[2%] md:px-0 md:pb-0 bg-[#FFFAFA] lg:pt-10  md:pb-20  dark:bg-gray-900 ">
+        <div className="container mx-auto pt-10 flex flex-wrap ">
+        <h1 className="text-center text-2xl pb-20 text-black" >
+          Our app design incorporates both user experience (UX) and user
+          interface (UI). From color scheme to font selection to the types of
+          widgets and buttons, we cover it all.
+        </h1>
           <div className="flex justify-center flex-wrap md:flex-nowrap">
             <div className=" dark:text-white text-black">
               <div className="flex relative pb-12 ">
@@ -28,10 +33,7 @@ const Step = () => {
                   <h2 className="font-medium title-font text-sm   mb-1 tracking-wider">
                     STEP 1
                   </h2>
-                  <p className="leading-relaxed">
-                    VHS cornhole pop-up, try-hard 8-bit iceland helvetica.
-                    Kinfolk bespoke try-hard cliche palo santo offal.
-                  </p>
+                  <p className="leading-relaxed">Design Discovery</p>
                 </div>
               </div>
               <div className="flex relative pb-12">
