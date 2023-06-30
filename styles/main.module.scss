@@ -22,7 +22,7 @@
 
 // our Strengths
 .strengths {
-  @apply container   mx-auto px-[2%] pb-24 pt-10;
+  @apply container  mx-auto px-[2%] pb-24 pt-10;
   .skills {
     h2 {
       @apply text-center text-3xl  font-bold md:pt-14 lg:pt-0;
@@ -69,16 +69,16 @@
       background: url("/assets/svg/5.svg") no-repeat center / contain;
     }
     .six {
-      @apply invert dark:invert-0 text-center pt-20  text-white  hover:animate-pulse;
-      background: url("/assets/svg/6.svg") no-repeat center / contain;
+      @apply invert dark:invert text-center pt-20  text-white  hover:animate-pulse;
+      background: url("/assets/strengs/design.webp") no-repeat center / contain;
     }
     .seven {
       @apply invert dark:invert-0 text-center pt-20  text-white  hover:animate-pulse;
       background: url("/assets/svg/7.svg") no-repeat center / contain;
     }
     .eight {
-      @apply invert dark:invert-0 text-center pt-20  text-white  hover:animate-pulse;
-      background: url("/assets/svg/8.svg") no-repeat center / contain;
+      @apply invert dark:invert text-center pt-20  text-white  hover:animate-pulse;
+      background: url("/assets/strengs/servers.png") no-repeat center / contain;
     }
     .nine {
       @apply invert dark:invert-0 text-center pt-20  text-white md:hidden  hover:animate-pulse;

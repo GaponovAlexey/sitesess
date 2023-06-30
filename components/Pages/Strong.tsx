@@ -2,7 +2,7 @@ import s from "../../styles/main.module.scss"
 
 const OurStrengths = () => {
   return (
-    <div id="strengths" className="bg-[#F3F2F5] lg:py-10" >
+    <div id="strengths" className="bg-[#F3F2F5] dark:bg-gray-900 lg:py-10" >
       <div className={s.strengths}>
         <div className={s.skills}>
           <div>
