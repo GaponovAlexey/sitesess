@@ -5,8 +5,11 @@
       @apply text-center text-xl;
     }
     .logoText {
-      @apply pt-[85%] md:pt-[40%] lg:pt-[25%] text-center tracking-widest font-bold sm:text-3xl text-[42px];
+      @apply  md:pt-[40%] lg:pt-[25%] text-center tracking-widest font-bold sm:text-3xl text-[42px];
     }
+    .logoTextLogo {
+      @apply flex justify-between ;
+    } 
     h2 {
       @apply text-center tracking-widest font-bold sm:text-3xl text-2xl pt-10;
     }
