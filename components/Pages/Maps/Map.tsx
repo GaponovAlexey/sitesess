@@ -14,7 +14,6 @@ const ApplyMap = () => {
 
   const add = async (e: any) => {
     e.preventDefault()
-    // Send data
     setName("")
     setCompany("")
     setNumber(null)
@@ -23,12 +22,12 @@ const ApplyMap = () => {
   }
 
   return (
-    <div className="relative dark:text-gray-100 z-4">
+    <div className="relative dark:text-black z-4">
       <section id="application">
         <GoogleMapComponent />
         <div className="absolute top-0 left-0 container px-4 md:px-12 left-19 py-4 ">
           <form
-            className="lg:w-1/3 md:w-1/2 bg-white     rounded-lg p-8 flex flex-col md:ml-auto  mt-20 sm:mt-0 relative z-10 shadow-md"
+            className="lg:w-1/3 md:w-1/2 bg-white  dark:bg-gray-100   rounded-lg p-8 flex flex-col md:ml-auto  mt-20 sm:mt-0 relative z-10 shadow-md"
             onSubmit={add}
           >
             <h2 className="text-lg mb-1 font-medium title-font text-center">
@@ -77,7 +76,7 @@ const ApplyMap = () => {
                 className="w-full bg-white dark:bg-[#9E9E9E] rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               ></textarea>
             </div>
-            <button className="inline-block">
+            <button className="inline-block text-black">
               <CustomBut name="Connect us" />
             </button>
             <p className="text-xs text-center  mt-3">
