@@ -99,7 +99,16 @@
       @apply flex flex-col text-center w-full;
       h2 {
         @apply text-3xl  leading-relaxed tracking-widest font-medium  mb-1 p-4;
-        background: linear-gradient(90deg, indigo, blue, green, yellow, orange);
+        background: linear-gradient(
+          90deg,
+          indigo,
+          blue,
+          green,
+          yellow,
+          orange,
+          red,
+          red
+        );
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;

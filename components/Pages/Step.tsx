@@ -11,6 +11,7 @@ const Step = () => {
             interface (UI). From color scheme to font selection to the types of
             widgets and buttons, we cover it all.
           </h1>
+          <p className="text-xl pb-5 text-black dark:text-white leading-relaxed" >Our process</p>
           <div className="flex justify-center flex-wrap ">
             <div className=" dark:text-white text-black">
               <div className="flex relative pb-12 ">
