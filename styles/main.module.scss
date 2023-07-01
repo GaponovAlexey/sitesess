@@ -1,11 +1,11 @@
 .front {
   @apply min-h-screen text-[#FFFAFA];
   div {
+    .logoText {
+      @apply pt-[80%] md:pt-[40%] lg:pt-[25%] text-center tracking-widest font-bold sm:text-3xl text-[42px];
+    }
     .devLogoText {
       @apply text-center text-xl;
-    }
-    .logoText {
-      @apply md:pt-[40%] lg:pt-[25%] text-center tracking-widest font-bold sm:text-3xl text-[42px];
     }
     .logoTextLogo {
       @apply flex justify-between;
