@@ -35,7 +35,7 @@ const Front = () => {
     let xoff = 0 // Option #1: 2D Noise
 
     for (let x = 0; x <= p5.width; x += 10) {
-      const minVal = 850
+      const minVal = 650
       const maxVal = 200
       const noiseValue = p5.noise(xoff, yoff.current)
       let y = p5.lerp(minVal, maxVal, noiseValue)
