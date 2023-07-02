@@ -25,28 +25,18 @@ const Front = () => {
     p5.background(70, 1, 20)
 
     p5.fill(50, 1, 110)
-    // We are going to draw a polygon out of the wave points
     p5.beginShape()
 
     let xoff = 0 // Option #1: 2D Noise
-    // float xoff = yoff; // Option #2: 1D Noise
 
-    // Iterate over horizontal pixels
     for (let x = 0; x <= p5.width; x += 10) {
-      // Calculate a y value according to noise, map to
-      // Option #1: 2D Noise
-      // We are now using the noise value to smoothly interpolate between a minimum and maximum y-value
       const minVal = 850
       const maxVal = 200
       const noiseValue = p5.noise(xoff, yoff.current)
       let y = p5.lerp(minVal, maxVal, noiseValue)
-
-      // Set the vertex
-      p5.vertex(x -10, y - 100)
-      // Increment x dimension for noise
+      p5.vertex(x - 10, y - 100)
       xoff += 0.007
     }
-    // increment y dimension for noise
     yoff.current += 0.001
     p5.vertex(p5.width, p5.height)
     p5.vertex(0, p5.height)
@@ -69,7 +59,10 @@ const Front = () => {
           className="absolute top-0 left-0 z-0 "
         />
         <div className="  ">
-          <div id="home" className="absolute z-10 h-full w-full  text-[#FFFAFA] ">
+          <div
+            id="home"
+            className="absolute z-10 h-full w-full  text-[#FFFAFA] "
+          >
             <motion.h1
               className="pt-[60%] md:pt-[40%] lg:pt-[16%] text-center tracking-widest font-bold sm:text-3xl text-[42px]"
               initial={{ x: +10, opacity: 0 }}

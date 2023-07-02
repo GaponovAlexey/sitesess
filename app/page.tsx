@@ -1,5 +1,4 @@
 import FAQ from "../components/Pages/FAQ"
-import Front from "../components/Pages/Front"
 import Landing from "../components/Pages/Landing"
 import Map from "../components/Pages/Maps/Map"
 import Marketing from "../components/Pages/Marketing"
@@ -10,7 +9,6 @@ import OurWorks from "../components/Pages/works/OurWorks"
 export default function Home() {
   return (
     <main className="dark:bg-gray-900">
-      <Front />
       <Landing />
       <OurWorks />
       <OurStrengths />
