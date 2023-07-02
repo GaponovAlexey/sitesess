@@ -20,7 +20,7 @@ const Front = () => {
       window.removeEventListener("resize", handleResize)
     }
   }, [])
-  
+
   const draw = (p5: any) => {
     p5.background(70, 1, 20)
 
@@ -53,10 +53,11 @@ const Front = () => {
     p5.endShape(p5.CLOSE)
   }
   const setup = (p5: any, canvasParentRef: any) => {
-    p5.createCanvas(p5.windowWidth, p5.windowHeight).parent(canvasParentRef)
+    p5.createCanvas(dimensions.width, dimensions.height).parent(canvasParentRef)
   }
+
   const windowResized = (p5: any) => {
-    p5.resizeCanvas(p5.windowWidth, p5.windowHeight)
+    p5.resizeCanvas(dimensions.width, dimensions.height)
   }
   return (
     <>

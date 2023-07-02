@@ -35,7 +35,8 @@ const DataAccordion = [
   },
   {
     id: 7,
-    title: "Can you help with improving the visibility of my website on search engines?",
+    title:
+      "Can you help with improving the visibility of my website on search engines?",
     body: `Answer: Yes, we provide search engine optimization (SEO) services to improve your website's visibility on search engines like Google. This includes keyword research, on-page optimization, link building, and more.`,
   },
   {
