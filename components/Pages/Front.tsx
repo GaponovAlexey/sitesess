@@ -10,9 +10,9 @@ import React from "react"
 const Front = () => {
   const yoff = React.useRef(0.0) as any
   const draw = (p5: any) => {
-    p5.background(0)
+    p5.background(70, 1, 20)
 
-    p5.fill(155)
+    p5.fill(50, 1, 110)
     // We are going to draw a polygon out of the wave points
     p5.beginShape()
 
@@ -24,13 +24,13 @@ const Front = () => {
       // Calculate a y value according to noise, map to
       // Option #1: 2D Noise
       // We are now using the noise value to smoothly interpolate between a minimum and maximum y-value
-      const minVal = 800
+      const minVal = 850
       const maxVal = 200
       const noiseValue = p5.noise(xoff, yoff.current)
       let y = p5.lerp(minVal, maxVal, noiseValue)
 
       // Set the vertex
-      p5.vertex(x, y)
+      p5.vertex(x -10, y - 100)
       // Increment x dimension for noise
       xoff += 0.007
     }
@@ -58,7 +58,7 @@ const Front = () => {
         <div className="  ">
           <div id="home" className="absolute z-10 h-full w-full  text-[#FFFAFA] ">
             <motion.h1
-              className="pt-[80%] md:pt-[40%] lg:pt-[25%] text-center tracking-widest font-bold sm:text-3xl text-[42px]"
+              className="pt-[60%] md:pt-[40%] lg:pt-[16%] text-center tracking-widest font-bold sm:text-3xl text-[42px]"
               initial={{ x: +10, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.1 }}
