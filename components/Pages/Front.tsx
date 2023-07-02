@@ -3,9 +3,10 @@ import { motion } from "framer-motion"
 import CustomBut from "../Utils/CustomBut"
 import ScrollPath from "../Utils/ScrollPath"
 import Image from "next/image"
-import dynamic from "next/dynamic"
 
+import dynamic from "next/dynamic"
 const Sketch = dynamic(() => import("react-p5"), { ssr: false })
+
 import React, { useEffect, useState } from "react"
 
 const Front = () => {
@@ -38,7 +39,7 @@ const Front = () => {
       const maxVal = 200
       const noiseValue = p5.noise(xoff, yoff.current)
       let y = p5.lerp(minVal, maxVal, noiseValue)
-      p5.vertex(x - 10, y - 100)
+      p5.vertex(x , y )
       xoff += 0.007
     }
     yoff.current += 0.001
