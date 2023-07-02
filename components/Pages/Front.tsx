@@ -54,12 +54,14 @@ const Front = () => {
   return (
     <>
       <div className="relative h-screen">
-        <Sketch
-          windowResized={windowResized}
-          draw={draw}
-          setup={setup}
-          className="absolute top-0 left-0 z-0 "
-        />
+        {typeof window !== "undefined" && (
+          <Sketch
+            windowResized={windowResized}
+            draw={draw}
+            setup={setup}
+            className="absolute top-0 left-0 z-0 "
+          />
+        )}
         <div className="  ">
           <div
             id="home"
