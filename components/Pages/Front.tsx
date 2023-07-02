@@ -11,13 +11,15 @@ const Front = () => {
   const yoff = React.useRef(0.0) as any
 
   useEffect(() => {
-    setDimensions({ width: window.innerWidth, height: window.innerHeight })
-    const handleResize = () => {
+    if (typeof window !== "undefined") {
       setDimensions({ width: window.innerWidth, height: window.innerHeight })
-    }
-    window.addEventListener("resize", handleResize)
-    return () => {
-      window.removeEventListener("resize", handleResize)
+      const handleResize = () => {
+        setDimensions({ width: window.innerWidth, height: window.innerHeight })
+      }
+      window.addEventListener("resize", handleResize)
+      return () => {
+        window.removeEventListener("resize", handleResize)
+      }
     }
   }, [])
 
