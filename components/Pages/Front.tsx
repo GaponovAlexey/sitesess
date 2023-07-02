@@ -3,7 +3,9 @@ import { motion } from "framer-motion"
 import CustomBut from "../Utils/CustomBut"
 import ScrollPath from "../Utils/ScrollPath"
 import Image from "next/image"
-import Sketch from "react-p5"
+import dynamic from "next/dynamic"
+
+const Sketch = dynamic(() => import("react-p5"), { ssr: false })
 import React, { useEffect, useState } from "react"
 
 const Front = () => {
@@ -54,14 +56,12 @@ const Front = () => {
   return (
     <>
       <div className="relative h-screen">
-        {typeof window !== "undefined" && (
-          <Sketch
-            windowResized={windowResized}
-            draw={draw}
-            setup={setup}
-            className="absolute top-0 left-0 z-0 "
-          />
-        )}
+        <Sketch
+          windowResized={windowResized}
+          draw={draw}
+          setup={setup}
+          className="absolute top-0 left-0 z-0 "
+        />
         <div className="  ">
           <div
             id="home"
