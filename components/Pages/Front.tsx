@@ -1,14 +1,26 @@
 "use client"
 import { motion } from "framer-motion"
-import s from "../../styles/main.module.scss"
 import CustomBut from "../Utils/CustomBut"
 import ScrollPath from "../Utils/ScrollPath"
 import Image from "next/image"
 import Sketch from "react-p5"
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 const Front = () => {
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
   const yoff = React.useRef(0.0) as any
+
+  useEffect(() => {
+    setDimensions({ width: window.innerWidth, height: window.innerHeight })
+    const handleResize = () => {
+      setDimensions({ width: window.innerWidth, height: window.innerHeight })
+    }
+    window.addEventListener("resize", handleResize)
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
+  
   const draw = (p5: any) => {
     p5.background(70, 1, 20)
 
