@@ -39,7 +39,7 @@ const Front = () => {
       const maxVal = 200
       const noiseValue = p5.noise(xoff, yoff.current)
       let y = p5.lerp(minVal, maxVal, noiseValue)
-      p5.vertex(x , y )
+      p5.vertex(x, y)
       xoff += 0.007
     }
     yoff.current += 0.001
@@ -68,41 +68,41 @@ const Front = () => {
             id="home"
             className="absolute z-10 h-full w-full  text-[#FFFAFA] "
           >
-            <motion.h1
-              className="pt-[60%] md:pt-[40%] lg:pt-[16%] text-center tracking-widest font-bold sm:text-3xl text-[42px]"
+            <motion.div
+              className="flex justify-between pt-[60%] md:pt-[40%] lg:pt-[16%]"
               initial={{ x: +10, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.1 }}
             >
-              Sitesess.ca
-              <motion.div
-                className="flex justify-between"
-                initial={{ x: +10, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: 0.1 }}
-              >
-                <Image
-                  width={100}
-                  className="mx-auto"
-                  height={100}
-                  src="/assets/sitesess4.svg"
-                  alt="logo"
-                />
-              </motion.div>
-            </motion.h1>
+              <Image
+                width={100}
+                className="mx-auto"
+                height={100}
+                src="/assets/sv.png"
+                alt="logo"
+              />
+            </motion.div>
             <motion.div
-              className="text-center text-xl"
+              className="text-center text-3xl"
               initial={{ x: -10, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              The web development company
+              THE WEB 
             </motion.div>
-            <motion.h2
-              className="text-center tracking-widest font-bold sm:text-3xl text-2xl pt-10"
+            <motion.div
+              className="text-center text-3xl"
               initial={{ x: +10, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ delay: 0.6 }}
+              transition={{ delay: 0.5 }}
+            >
+              DEVELOPMENT COMPANY
+            </motion.div>
+            <motion.h2
+              className="text-center tracking-widest font-bold sm:text-2xl text-xl pt-10"
+              initial={{ x: +10, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.8 }}
             >
               We Know You Are Passionate About Your Small Business
             </motion.h2>
