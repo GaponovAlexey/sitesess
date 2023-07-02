@@ -27,9 +27,9 @@ const Front = () => {
   }, [])
 
   const draw = (p5: any) => {
-    p5.background(20, 100, 190)
+    p5.background(20, 100, 300)
 
-    p5.fill(20, 1, 120)
+    p5.fill(200, 100, 200)
     p5.beginShape()
 
     let xoff = 0 // Option #1: 2D Noise
