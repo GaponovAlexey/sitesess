@@ -39,7 +39,7 @@ const Front = () => {
       const maxVal = 200
       const noiseValue = p5.noise(xoff, yoff.current)
       let y = p5.lerp(minVal, maxVal, noiseValue)
-      p5.vertex(x, y -10)
+      p5.vertex(x, y -30)
       xoff += 0.009
     }
     yoff.current += 0.001

@@ -9,10 +9,22 @@ import Image from "next/image"
 
 import s from "../../../styles/main.module.scss"
 
+const data = [
+  { id: 1, title: "Recipe Cook", img: "/works/cook1.png" },
+  { id: 2, title: "Photo Agency", img: "/works/photo1.png" },
+  { id: 3, title: "COMPETE", img: "/works/com.png" },
+  { id: 4, title: "DEXRETURN", img: "/works/dexreturn1.png" },
+  { id: 5, title: "Blog", img: "/works/blog.png" },
+  { id: 6, title: "E-commerce", img: "/works/ecommerce.png" },
+  { id: 7, title: "Brend", img: "/works/brend.png" },
+]
+
 const CarouselComponent = () => {
   return (
     <div className="container mx-auto">
-      <div className={`${s.colorTextSmall} text-2xl py-16 text-center`}>Our works</div>
+      <div className={`${s.colorTextSmall} text-2xl py-16 text-center`}>
+        Our works
+      </div>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={2}
@@ -37,31 +49,15 @@ const CarouselComponent = () => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >
-        <SwiperSlide>
-          <Image height={600} width={600} src={"/assets/h2.png"} alt="1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://via.placeholder.com/1200/3.png" alt="1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://via.placeholder.com/1200/3.png" alt="1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://via.placeholder.com/1200/3.png" alt="1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://via.placeholder.com/1200/3.png" alt="1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://via.placeholder.com/1200/3.png" alt="1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://via.placeholder.com/1200/3.png" alt="1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://via.placeholder.com/1200/3.png" alt="1" />
-        </SwiperSlide>
-        {" ."}
+        {data.map((w) => {
+          return (
+            <SwiperSlide key={w.id} className="flex align-middle self-center">
+              <h2 className="text-center" >{w.title}</h2>
+              <Image height={1200} width={1200} src={w.img} alt="works" />
+            </SwiperSlide>
+          )
+        })}
+       <br/>
       </Swiper>
     </div>
   )
