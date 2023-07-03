@@ -27,20 +27,20 @@ const Front = () => {
   }, [])
 
   const draw = (p5: any) => {
-    p5.background(20, 100, 300)
+    p5.background(0, 87, 184)
 
-    p5.fill(200, 100, 200)
+    p5.fill(255, 215, 0)
     p5.beginShape()
 
-    let xoff = 0 // Option #1: 2D Noise
+    let xoff = -10 // Option #1: 2D Noise
 
-    for (let x = 0; x <= p5.width; x += 10) {
+    for (let x = 0; x <= p5.width; x += 5) {
       const minVal = 650
       const maxVal = 200
       const noiseValue = p5.noise(xoff, yoff.current)
       let y = p5.lerp(minVal, maxVal, noiseValue)
-      p5.vertex(x, y)
-      xoff += 0.007
+      p5.vertex(x, y -10)
+      xoff += 0.009
     }
     yoff.current += 0.001
     p5.vertex(p5.width, p5.height)
@@ -50,10 +50,11 @@ const Front = () => {
   const setup = (p5: any, canvasParentRef: any) => {
     p5.createCanvas(dimensions.width, dimensions.height).parent(canvasParentRef)
   }
-
   const windowResized = (p5: any) => {
     p5.resizeCanvas(dimensions.width, dimensions.height)
   }
+  // but
+  
   return (
     <>
       <div className="relative h-screen">
