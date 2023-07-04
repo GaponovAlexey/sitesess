@@ -4,71 +4,15 @@ import CustomBut from "../Utils/CustomBut"
 import ScrollPath from "../Utils/ScrollPath"
 import Image from "next/image"
 
-import dynamic from "next/dynamic"
-const Sketch = dynamic(() => import("react-p5"), { ssr: false })
-
-import React, { useEffect, useState } from "react"
+import ParticlesComponent from "../Utils/ParticlesComponent"
 
 const Front = () => {
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
-  const yoff = React.useRef(0.0) as any
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setDimensions({ width: window.innerWidth, height: window.innerHeight })
-      const handleResize = () => {
-        setDimensions({ width: window.innerWidth, height: window.innerHeight })
-      }
-      window.addEventListener("resize", handleResize)
-      return () => {
-        window.removeEventListener("resize", handleResize)
-      }
-    }
-  }, [])
-
-  const draw = (p5: any) => {
-    p5.background(0, 87, 184)
-
-    p5.fill(255, 215, 0)
-    p5.beginShape()
-
-    let xoff = -10 // Option #1: 2D Noise
-
-    for (let x = 0; x <= p5.width; x += 5) {
-      const minVal = 650
-      const maxVal = 200
-      const noiseValue = p5.noise(xoff, yoff.current)
-      let y = p5.lerp(minVal, maxVal, noiseValue)
-      p5.vertex(x, y -30)
-      xoff += 0.009
-    }
-    yoff.current += 0.001
-    p5.vertex(p5.width, p5.height)
-    p5.vertex(0, p5.height)
-    p5.endShape(p5.CLOSE)
-  }
-  const setup = (p5: any, canvasParentRef: any) => {
-    p5.createCanvas(dimensions.width, dimensions.height).parent(canvasParentRef)
-  }
-  const windowResized = (p5: any) => {
-    p5.resizeCanvas(dimensions.width, dimensions.height)
-  }
-  // but
-  
   return (
     <>
-      <div className="relative h-screen">
-        <Sketch
-          windowResized={windowResized}
-          draw={draw}
-          setup={setup}
-          className="absolute top-0 left-0 z-0 "
-        />
-        <div className="  ">
-          <div
-            id="home"
-            className="absolute z-10 h-full w-full  text-[#FFFAFA] "
-          >
+      <div className="h-screen  mx-auto">
+     
+        <div>
+          <div id="home" className="z-10 h-full w-full  text-[#FFFAFA] ">
             <motion.div
               className="flex justify-between pt-[60%] md:pt-[40%] lg:pt-[16%]"
               initial={{ x: +10, opacity: 0 }}
@@ -89,7 +33,7 @@ const Front = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              THE WEB 
+              THE WEB
             </motion.div>
             <motion.div
               className="text-center text-3xl"
