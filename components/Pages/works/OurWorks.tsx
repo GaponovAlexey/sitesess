@@ -47,14 +47,14 @@ const CarouselComponent = () => {
         }}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        onSwiper={() => console.log()}
+        onSlideChange={() => console.log()}
       >
         {data.map((w) => {
           return (
-            <SwiperSlide key={w.id} className="flex align-middle self-center">
-              <h2 className="text-center" >{w.title}</h2>
-              <Image height={1200} width={1200} src={w.img} alt="works" />
+            <SwiperSlide key={w.id} className="flex  align-middle self-center">
+              <h2 className="text-center">{w.title}</h2>
+              <Image height={1200} width={1200} src={w.img} alt="works" className="h-[25rem]" />
             </SwiperSlide>
           )
         })}
