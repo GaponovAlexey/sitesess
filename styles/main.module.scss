@@ -72,7 +72,7 @@
 }
 
 .landing {
-  @apply dark:bg-gray-900 flex flex-wrap bg-[#FAFAFA] pt-[5%];
+  @apply dark:bg-gray-900 flex z-10 flex-wrap bg-[#FAFAFA] pt-[5%];
   .landing_use {
     @apply container mx-auto px-[2%];
     .landing_use_top {

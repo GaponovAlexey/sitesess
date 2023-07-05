@@ -5,21 +5,13 @@ import { loadFull } from "tsparticles"
 
 const ParticlesComponent = () => {
   const particlesInit = useCallback(async (engine: any) => {
-    console.log(engine)
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine)
   }, [])
 
-  const particlesLoaded = useCallback(async (container: any) => {
-    await console.log(container)
-  }, [])
   return (
     <div>
       <Particles
         init={particlesInit}
-        loaded={particlesLoaded}
         id="tsparticles"
         options={{
           fullScreen: {
@@ -116,7 +108,7 @@ const ParticlesComponent = () => {
                 enable: true,
                 area: 800,
               },
-              limit: 20,
+              limit: 30,
               value: 15,
             },
             opacity: {
@@ -149,12 +141,12 @@ const ParticlesComponent = () => {
               },
               image: [
                 {
-                  src: "/bgIco/nextjs.svg",
+                  src: "/bgIco/mongodb.svg",
                   width: 20,
                   height: 20,
                 },
                 {
-                  src: "/bgIco/mongodb.svg",
+                  src: "/bgIco/nextjs.svg",
                   width: 20,
                   height: 20,
                 },
@@ -200,7 +192,7 @@ const ParticlesComponent = () => {
                 },
               ],
               polygon: {
-                sides: 5,
+                sides: 10,
               },
               stroke: {
                 color: "#000000",

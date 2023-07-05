@@ -60,10 +60,10 @@ const Front = () => {
           initial={{ y: +10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 2 }}
-          className="text-center pt-10 hover:scroll-auto "
+          className="text-center pt-10 p-20 hover:scroll-auto "
         >
           <ScrollPath to="application">
-            <CustomBut name="Connect us" />
+            <CustomBut name="Contact Us" color="white"  />
           </ScrollPath>
         </motion.div>
       </div>
