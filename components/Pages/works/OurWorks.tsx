@@ -13,7 +13,7 @@ import s from "../../../styles/main.module.scss"
 const data = [
   { id: 1, title: "Recipe Cook", img: "/works/cook1.png" },
   { id: 2, title: "Photo Agency", img: "/works/photo1.png" },
-  { id: 3, title: "COMPETE", img: "/works/com.png" },
+  { id: 3, title: "COMPETE", img: "/works/coms.png" },
   { id: 4, title: "DEXRETURN", img: "/works/dexreturn1.png" },
   { id: 5, title: "Blog", img: "/works/blog.png" },
   { id: 6, title: "E-commerce", img: "/works/ecommerce.png" },
