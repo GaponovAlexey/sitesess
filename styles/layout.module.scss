@@ -17,8 +17,8 @@
 .footer_main {
   @apply h-auto bg-[#FFFAFA] dark:bg-gray-900 text-center;
   .logo {
-    @apply p-10;
-    background: no-repeat url("/assets/sitesess4.svg") center / contain;
+    @apply p-5;
+    background: no-repeat url("/assets/logo.svg") center / cover;
   }
   ul {
     @apply flex justify-center m-0;
