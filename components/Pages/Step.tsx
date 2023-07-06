@@ -1,7 +1,7 @@
 import s from "../../styles/main.module.scss"
 const Step = () => {
   return (
-    <section className="text-gray-400 mb-32  px-[2%] md:px-0  bg-[#FFFAFA] lg:pt-10  md:pb-20  dark:bg-gray-900 ">
+    <section className="text-gray-400 mb-32  px-[2%] md:px-0   lg:pt-10  md:pb-20  dark:bg-gray-900 ">
       <div className="container mx-auto pt-10 flex flex-wrap ">
         <h1 className={`${s.colorText} mx-auto text-2xl pb-20 text-black`}>
           Our process
