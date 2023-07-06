@@ -5,6 +5,7 @@ import ScrollPath from "../Utils/ScrollPath"
 import Image from "next/image"
 
 import ParticlesComponent from "../Utils/ParticlesComponent"
+import { aboreto, allison } from "../../app/fonts"
 
 const Front = () => {
   return (
@@ -30,7 +31,7 @@ const Front = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          THE WEB
+          <div className={aboreto.className}>THE WEB</div>
         </motion.div>
         <motion.div
           className="text-center text-3xl"
@@ -38,23 +39,40 @@ const Front = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.5 }}
         >
-          DEVELOPMENT COMPANY
+          <div className={aboreto.className}>DEVELOPMENT COMPANY</div>
         </motion.div>
         <motion.h2
-          className="text-center tracking-widest font-bold sm:text-2xl text-xl pt-10"
+          className="text-center tracking-widest  text-4xl pt-10 text-blue-500 font-bold"
           initial={{ x: +10, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.8 }}
         >
-          We Know You Are Passionate About Your Small Business
+          <div className={aboreto.className} >
+
+          Transforming Your Dreams 
+          </div>
+        </motion.h2>
+        <motion.h2
+          className="text-center tracking-widest  text-4xl"
+          initial={{ x: +10, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.8 }}
+        >
+          <div className={aboreto.className} >
+
+          into 
+          </div>
         </motion.h2>
         <motion.h4
-          className="text-center text-xl"
+          className="text-center tracking-widest  text-4xl text-[#7DF9FF] font-bold"
           initial={{ x: -10, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 1.5 }}
         >
-          We help businesses turn ideas into effective products
+           <div className={aboreto.className} >
+
+           Digital Reality!
+           </div>
         </motion.h4>
         <motion.div
           initial={{ y: +10, opacity: 0 }}
@@ -63,7 +81,7 @@ const Front = () => {
           className="text-center pt-10 p-20 hover:scroll-auto "
         >
           <ScrollPath to="application">
-            <CustomBut name="Contact Us" color="white"  />
+            <CustomBut name="Contact Us" color="white" />
           </ScrollPath>
         </motion.div>
       </div>

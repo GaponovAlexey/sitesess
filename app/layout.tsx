@@ -7,7 +7,7 @@ import "../styles/index.css"
 
 
 export const metadata = {
-  title: "THE WEB DEVELOPMENT",
+  title: "SITESESS",
   description: "THE WEB DEVELOPMENT COMPANY, build website, website for your business",
 }
 

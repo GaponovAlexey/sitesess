@@ -1,8 +1,10 @@
-import { Merriweather, Montserrat, Prosto_One, Sora } from "next/font/google"
+import { Merriweather, Montserrat, Prosto_One, Sora, Aboreto, Almendra_Display } from "next/font/google"
 
 // const inter = JetBrains_Mono({ subsets: ["latin"] })
 // const inter = Open_Sans({ subsets: ["latin"] })
 export const one = Prosto_One({ subsets: ["latin"], weight: "400" })
+export const aboreto = Aboreto({ subsets: ["latin"], weight: "400" })
+export const allison = Almendra_Display({ subsets: ["latin"], weight: "400" })
 
 export const montserrat = Montserrat({ subsets: ["latin"] })
 // const inter = Raleway({ subsets: ["latin"] })
